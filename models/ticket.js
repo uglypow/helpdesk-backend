@@ -18,8 +18,8 @@ const ticketSchema = new mongoose.Schema({
         type: String,
         enum: ['pending', 'accepted', 'resolved', 'rejected']
     },
-    created_at: String,
-    updated_at: String
+    created_at: Date,
+    updated_at: Date
 })
 
 ticketSchema.set('toJSON', {
