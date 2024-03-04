@@ -1,7 +1,5 @@
 const ticketsRounter = require('express').Router()
 const Ticket = require('../models/ticket')
-const moment = require('moment-timezone');
-
 
 ticketsRounter.get('/', async (request, response) => {
     const tickets = await Ticket.find({})
