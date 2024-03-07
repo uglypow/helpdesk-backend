@@ -46,9 +46,9 @@ ticketsRounter.post('/', async (request, response) => {
     response.status(201).json(savedTicket)
 })
 
-// ticketsRounter.delete('/:id', async (request, response) => {
-//     await Ticket.findByIdAndDelete(request.params.id)
-//     response.status(204).end()
-// })
+ticketsRounter.delete('/:id', async (request, response) => {
+    // await Ticket.findByIdAndDelete(request.params.id)
+    response.status(204).end()
+})
 
 module.exports = ticketsRounter
