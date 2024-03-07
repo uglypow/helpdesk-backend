@@ -28,9 +28,12 @@ In order to run this locally please create ".env" file
 in the root directory and set it as the following
 
 ```
-MONGODB_URI='Your mongoDB database connection string'
+MONGODB_URI=<Your mongoDB database connection string>
 PORT=8080
 ```
+
+MONGODB_URI should look something like this 
+"mongodb+srv://<username>:<password>@fullstackopen.zqztxku.mongodb.net/?retryWrites=true&w=majority&appName=<database-name>"
 
 4. Run it
 
