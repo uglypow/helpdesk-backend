@@ -10,7 +10,7 @@ To run this locally please follow the following steps
 1. Clone from github repository
 
 ```
-git clone https://github.com/sodtiruk/website-ticket-management.git
+git clone https://github.com/uglypow/helpdesk-backend.git
 ```
 
 2. run the following command

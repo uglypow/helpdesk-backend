@@ -8,6 +8,7 @@ ticketsRounter.get('/', async (request, response) => {
 
 ticketsRounter.get('/:id', async (request, response) => {
     const ticket = await Ticket.findById(request.params.id)
+
     if (ticket) {
         response.json(ticket)
     } else {
@@ -26,6 +27,7 @@ ticketsRounter.put('/:id', async (request, response) => {
         created_at: body.created_at,
         updated_at: body.updated_at
     }
+    
     const updatedTicket = await Ticket.findByIdAndUpdate(request.params.id, ticket, { new: true })
     response.json(updatedTicket)
 })
