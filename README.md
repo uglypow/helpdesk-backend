@@ -7,7 +7,7 @@ https://github.com/uglypow/helpdesk-frontend
 ## Setting up
 To run this locally please follow the following steps
 
-1. Clone from git hub repository
+1. Clone from github repository
 
 ```
 git clone https://github.com/sodtiruk/website-ticket-management.git
@@ -28,7 +28,7 @@ In order to run this locally please create ".env" file
 in the root directory and set it as the following
 
 ```
-MONGODB_URI='Your mongoDB database link'
+MONGODB_URI='Your mongoDB database connection string'
 PORT=8080
 ```
 
