@@ -5,7 +5,7 @@ https://helpdesk-support-ticket.fly.dev/
 https://github.com/uglypow/helpdesk-frontend
 
 ## Setting up
-to run this locally please follow the following steps
+To run this locally please follow the following steps
 
 1. Clone from git hub repository
 
@@ -19,6 +19,7 @@ git clone https://github.com/sodtiruk/website-ticket-management.git
 cd helpdesk-backend
 npm install
 ```
+
 3. Create .env file 
 
 *This project was made using mongoDB as a database*
@@ -51,4 +52,4 @@ http://localhost:8080/
 - [localhost:8080/api/tickets/](http://localhost:8080/api/tickets/)`id` - PUT/UPDATE A TICKET
 - [localhost:8080/api/tickets/](http://localhost:8080/api/tickets/)`id` - DELETE A TICKET (not usable) 
 
-**_DELETE will only return 204 status will but not actually deleting the content. if you want to enable the functiin you can go to tickets.js in controllers and uncomment the function inside._** 
+**_DELETE will only return 204 status but will not actually deleting the content. if you want to enable the function you can go to tickets.js in controllers folder and uncomment the function inside ticketsRounter.delete route._** 
