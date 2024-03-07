@@ -23,12 +23,12 @@ ticketsRounter.put('/:id', async (request, response) => {
         title: body.title,
         description: body.description,
         contact: body.contact,
-        status: body.status || 'pending',
+        status: body.status,
         created_at: body.created_at,
         updated_at: body.updated_at
     }
     
-    const updatedTicket = await Ticket.findByIdAndUpdate(request.params.id, ticket, { new: true })
+    const updatedTicket = await Ticket.findByIdAndUpdate(request.params.id, ticket, { new: true, runValidators: true, context: 'query' })
     response.json(updatedTicket)
 })
 
