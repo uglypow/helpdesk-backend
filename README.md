@@ -33,7 +33,11 @@ PORT=8080
 ```
 
 MONGODB_URI should look something like this 
-"mongodb+srv://<username>:<password>@fullstackopen.zqztxku.mongodb.net/?retryWrites=true&w=majority&appName=<database-name>"
+
+```
+MONGODB_URI=mongodb+srv://<username>:<password>@<database-name>.zqztxku.mongodb.net/?retryWrites=true&w=majority&appName=<database-name>
+...
+```
 
 4. Run it
 
